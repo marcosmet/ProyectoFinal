@@ -1,0 +1,123 @@
+.contenedor-hero1 {
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .hero1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;  /* Ajusta el tamaño al 80% del ancho de la pantalla */
+    height: 60vh; /* Ajusta la altura de la sección */
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .mensaje1 {
+    flex: 1;
+    padding: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .tablet1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black; /* Fondo negro para la tablet */
+  }
+
+  .tablet1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: cambioVertical 5s infinite;
+  }
+
+  @keyframes cambioVertical {
+    0% {
+      transform: scaleY(1);  /* Imagen normal */
+
+
+    }
+    5% {
+      transform: scaleY(0.01);  /* Imagen se achica verticalmente */
+      filter: brightness(0) invert(1);
+    }
+    10% {
+      transform: scaleY(0.01) scaleX(0.01);  /* Regresa a su tamaño original */
+
+      filter: brightness(0) invert(1);
+
+    }
+    20% {
+        transform: scaleY(0.01) scaleX(0.01);  /* Regresa a su tamaño original */
+  
+        filter: brightness(0) invert(1);
+  
+      }
+
+      25% {
+        transform: scaleY(0.01) scaleX(1);  /* Regresa a su tamaño original */
+  
+        filter: brightness(0) invert(1);
+  
+      }
+
+      30% {
+        transform: scaleY(1) scaleX(1);  /* Regresa a su tamaño original */
+  
+        filter: brightness(1) invert(0);
+  
+      }
+
+
+
+
+
+
+
+    
+
+    100% {
+        transform: scaleY(1) scaleX(1);  /* Regresa a su tamaño original */
+        filter: brightness(1) invert(0);
+  
+      }
+  }
+
+  .tablet1 .contenido-imagen1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .tablet1 .contenido-imagen1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: cambioVertical 5s infinite;
+    background-color: white;
+  }
